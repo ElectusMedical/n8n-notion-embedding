@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Chatbot</title>
+    <link href='https://cdn.jsdelivr.net/npm/@n8n/chat@0.47.0/dist/style.css' rel='stylesheet'>
+    <script type='module'>
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.47.0/dist/createChat.js';
+
+        createChat({
+            webhookUrl: 'https://n8n.srv849550.hstgr.cloud/webhook/e8a3a63c-6af5-4d0c-9f80-b7ac12ac20a3/chat',
+        });
+    </script>
+    <style>
+        /* Optional: Add some basic styling to make the chatbot fill the space */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars if content fits */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Or match your Notion theme */
+        }
+        #n8n-chat-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="n8n-chat-container"></div> 
+</body>
+</html>
